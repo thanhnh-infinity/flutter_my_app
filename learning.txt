@@ -1,0 +1,61 @@
+Flutter Architecture:
+
+1. Widgets: The core concept of the Flutter Framework is In Flutter, Everything is Widgets. Basicically, Widgets are user interface components used to create the user interface of the application
+
+In Flutter the application is itself Widget. The application is the top-level widget and its UI is build using one or more children widgets.--<> which again build uisng its children widgets. 
+
+- MyApp is the user created widget and it is buuild using the Flutter native widget MaterialApp
+- MaterialApp has a home property to specify the user interface of the home page, which again a user created widget, MyHomePage
+- MyHomePage is buuild using another flutter native widget, Scaffold
+- Scafflod has 3 properties: body and appBar, floatingActionButton
+
+StateflulWidget: support State maintanence, needs to be derived from StatefulWidget to support state maintanence and all other widget should be derived from StatefulWidget
+
+The most important concept of Flutter framework is that the framework is grouped into multiple category in terms of complexity and clearly arranged in layers of decreasing complexity. 
+
+StatelessWidget: requires a single method build to be  implemented in it derived class. The build method gets the context environment neccessary to build the widgets through BuildContext parameter and returns the widget it builds.
+
+In Flutter widgets can be grouped into multiple categories based on their features
+- Platform specific widgets
+- Layout widgets
+- State maintaenance widgets
+- Platform independent/ basic widgets
+
+1. Platform specific widgets: 
+- Scaffold
+- AppBar
+- BottomNavigationBar
+- TabBar
+- TabBarView
+- ListTile
+- RaisedButton
+- floatingActionButton
+- FlatButton
+- IconButton
+- DropdownButton
+- PopupMenuButton
+- ButtonBar
+- TextField
+- Checkbox
+- Radio
+- Switch
+- Slider
+- Data & Time Pickers
+- Simple Dialog
+- AlertDialog
+....
+
+2. Layout Widgets: Created by composing one or more widgets. 
+- Container : Rectangular box using BoxDecoration widgets with background , border and shadow
+- Center: Center its child widgets
+- Row : Arrange its child in the horizontal direction
+- Column : Arrange its child in vertical direction
+- Stack : Arranget one above the another
+
+3. State Maintenance widgets:
+
+4. Platform independent/basic widgets
+- Text
+- Image: Most important properties: image, width, height, alignment
+- Icon
+
