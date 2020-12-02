@@ -59,3 +59,48 @@ In Flutter widgets can be grouped into multiple categories based on their featur
 - Image: Most important properties: image, width, height, alignment
 - Icon
 
+The core concept of Flutter is Everything is Widgets. Flutter incorporates a user interface layout functionality into the widgets itselfs. Flutter provides quite a lot of specially designed widgets like Container, Center, Align, etc. 
+
+Type of layout Widgets:
+- Support a single child
+- Support multiple child
+
+Single Child Widget:
+- Center widget just centers it child widget with respect to its parent widget and Container widget provides complete flexibility to place it child at any given place inside it using different optio like padding, BoxDecoration
+
+Padding: Used to arrange its child widgets by the given padding. 
+Align: Align its child widget within itself using the value of alignment property. 
+
+Multole Child Widgets:
+- Row : 
+- Column:
+- ListView :
+- GridView :
+- Expanded
+- Table
+- Flow
+- Stack
+
+
+Gestures are primaruly a way for a user to interact with a mobile (touch based device) application. gestures are generally defined as any physical action movement of a user in the intention of activating a specific control of the mobile device. Gestures are simple as tapping the screen of the mobile device to more complex actions used in gamming application. GestureDetector : NON-VISUAL widget primarily used for detecing the user'gesture. To identify a gesture targeted on a widget, the widget can be placed INSIDE GetstureDetector widget.
+- Tap
+    - onTapDown
+    - onTapUp
+    - onTap
+    - onTapCancel
+
+- Double Tap
+    - onDoubleTap
+- Drap
+- Flick
+- Pinch
+- Spread
+- Panning
+.....
+
+Flutter provides low-level gesture detection mechasism through Listener widget
+- PointerDownEvent
+- PointerMoveEvent
+- PointerUpEvent
+- PointerCancelEvent
+- 

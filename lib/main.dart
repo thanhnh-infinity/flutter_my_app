@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home_page.dart' as home;
-import 'home_page_2.dart' as home2;
+
 void main() {
   runApp(MyApp());
 }
@@ -27,7 +27,8 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: home2.MyHomePage2(title: 'Thanh Nguyen, Home Page 1'),
+      //home: products.MyProductList(title: 'Thanh Nguyen, Home Page 1'),
+      home: home.MyHomePage(title: 'All Examples'),
     );
   }
 }

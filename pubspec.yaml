@@ -77,3 +77,9 @@ flutter:
 
   assets:
     - assets/smile.png
+    - assets/appimages/floppy.jpg 
+    - assets/appimages/iphone.jpg 
+    - assets/appimages/laptop.jpg 
+    - assets/appimages/pendrive.jpg 
+    - assets/appimages/pixel.jpg
+    - assets/appimages/tablet.jpg
