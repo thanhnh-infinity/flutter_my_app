@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'example_page_1.dart' as example_1;
 import 'example_page_2.dart' as example_2;
 import 'product_list.dart' as products;
+import 'product_page.dart' as product_page;
 
 
 class MyHomePage extends StatelessWidget {
@@ -31,6 +32,12 @@ class MyHomePage extends StatelessWidget {
         Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => products.MyProductList(title: 'Product List')),
+        );
+      } else if (example == 4){
+        print("Go to example 4");
+        Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => product_page.ProductsListPage(title: 'Product List')),
         );
       }
   }
@@ -85,6 +92,17 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
             
+            GestureDetector(
+              onTap: () {
+                //_gotoExample(context,2);
+              },
+              child: ElevatedButton(
+                onPressed: () {
+                  _gotoExample(context,4);
+                },
+                child: Text('Go To Product List Full'),
+              ),
+            ),
           ], 
         )
         
